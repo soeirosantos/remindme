@@ -3,6 +3,7 @@ package br.com.soeirosantos.remindme.domain
 import org.junit.Assert
 import org.junit.Test
 
+import br.com.soeirosantos.remindme.service.ColorService;
 import br.com.soeirosantos.remindme.service.TagService
 
 class NoteTest {
@@ -26,7 +27,7 @@ class NoteTest {
 		Note n = new Note()
 		def body = "Test if a very long string is correctly concatenated as it should be"
 		n.body = body
-		def partialBody = "Test if a very long string is correctaly..."
+		def partialBody = "Test if a very long string is correctly..."
 		Assert.assertEquals(partialBody, n.toString())
 	}
 	
