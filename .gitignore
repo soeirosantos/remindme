@@ -1,3 +1,10 @@
+.forge
+.forge_settings
+.classpath
+.project
+.settings
+target
+
 *.class
 
 # Package Files #

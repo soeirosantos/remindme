@@ -1,0 +1,47 @@
+body {
+	margin: 0px;
+	padding: 0;
+	color: #616161;
+}
+
+h1, h2, h3 {
+	margin-top: 0;
+}
+
+h1 {
+	font-size: 1.6em;
+	font-weight: normal;
+}
+
+h2 {
+	font-size: 1.6em;
+}
+
+h3 {
+	font-size: 1em;
+	margin-top:20px;
+}
+
+.container {
+	background: #FFE6A0;
+	margin: 0 auto;
+	width: 800px;	
+	height: auto;
+}
+
+#panelNotes_content {
+	border: 0px;
+}
+
+
+.ui-widget {
+    font-size: 12px !important;
+}
+
+.whiteTextNote .ui-panel-content {
+	color: #ffffff;
+}
+
+.blackTextNote .ui-panel-content {
+	color: #000000;
+}
