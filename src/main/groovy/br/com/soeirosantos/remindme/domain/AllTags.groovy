@@ -13,29 +13,24 @@ class AllTags {
 
 	@PersistenceContext
 	EntityManager entityManager
-	
+
 	def getOrCreate(Tag tag) {
-		
+
 		try {
-			
+
 			return entityManager
-						.createNamedQuery(Tag.FIND_BY_NAME)
-			            .setParameter("name", tag.name)
-						.getSingleResult()
-						 
+			.createNamedQuery(Tag.FIND_BY_NAME)
+			.setParameter("name", tag.name)
+			.getSingleResult()
 		} catch (NoResultException e) {
-			
+
 			entityManager.persist(tag)
 			entityManager.flush()
 			return tag
-		
 		}
-		
-		
 	}
-	
+
 	def all() {
 		return entityManager.createNamedQuery(Tag.FIND_ALL).getResultList()
 	}
-	
 }

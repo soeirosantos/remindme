@@ -11,11 +11,11 @@ class AllNotes {
 
 	@PersistenceContext
 	EntityManager entityManager
-	
+
 	def add(Note note) {
 		entityManager.merge(note)
 	}
-	
+
 	def all(){
 		return entityManager.createNamedQuery(Note.FIND_ALL).getResultList()
 	}
