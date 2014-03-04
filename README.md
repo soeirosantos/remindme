@@ -1,7 +1,5 @@
-remindme
-========
-
 JavaEE example application using Groovy
+=======================================
 
 An application written in Groovy using JavaEE 7 aspects:
 
@@ -11,6 +9,6 @@ An application written in Groovy using JavaEE 7 aspects:
 - JSF 2.2 for MVC and;
 - Primefaces 4 for visual components.
 
-To run this example use a WildFly instalation or 
+To run this example use a WildFly instalation or do
 
 	mvn clean wildfly:run
